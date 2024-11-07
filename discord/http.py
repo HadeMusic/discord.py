@@ -299,7 +299,7 @@ def _set_api_version(value: int):
 
 
 class Route:
-    BASE: ClassVar[str] = 'http://51.222.26.25:80/api/v10'
+    BASE: ClassVar[str] = 'http://localhost:3000/api/v10'
 
     def __init__(self, method: str, path: str, *, metadata: Optional[str] = None, **parameters: Any) -> None:
         self.path: str = path
